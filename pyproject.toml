@@ -5,10 +5,10 @@ build-backend = "maturin"
 [tool.poetry]
 name = "sylver"
 version = "0.3.4"
+authors = ["sylver-dev"]
 description = "Multi-language programmable linter"
 readme = "README.md"
-requires-python = ">=3.7"
-license = { file = "LICENSE.txt" }
+license = "LICENSE.txt"
 
 [tool.maturin]
 bindings = "bin"
