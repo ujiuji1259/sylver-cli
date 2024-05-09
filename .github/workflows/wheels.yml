@@ -19,4 +19,10 @@ jobs:
       - uses: PyO3/maturin-action@v1
         with:
           command: build
-          args: --release
+          args: --release -o target/dist
+
+      - name: Upload Wheels
+        uses: actions/upload-artifact@v1
+        with:
+          name: Wheels
+          path: target/dist
